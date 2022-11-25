@@ -1,8 +1,12 @@
 import styled from '@emotion/styled';
 
-export const Head = styled.thead``;
+export const Head = styled.thead`
+  background-color: white;
+`;
 
-export const Row = styled.tr``;
+export const Row = styled.tr`
+  background-color: white;
+`;
 
 export const Header = styled.th`
   border: grey 1px solid;
