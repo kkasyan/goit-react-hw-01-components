@@ -1,0 +1,19 @@
+.stats {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  background-color: #e7ecf2;
+  font-size: 12px;
+}
+
+.stats li {
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+}
+
+.stats li:not(:last-child) {
+  border-right: rgba(0, 0, 0, 0.219) 0.5px solid;
+}
