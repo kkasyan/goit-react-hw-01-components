@@ -1,7 +1,12 @@
-import { Profile } from './task1/Profile/Profile';
-import { Statistics } from './task2/Statistics/Statistics';
-import { FriendList } from './task3/FriendList/FriendList';
-import { TransactionHistory } from './task4/TransactionHistory/TransactionHistory';
+import { Profile } from './Profile/Profile';
+import { Statistics } from './Statisctics/Statistics';
+import { FriendList } from './FriendList/FriendList';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+
+import profile from '../data/user';
+import data from '../data/data';
+import friends from '../data/friends';
+import transactions from '../data/transactions';
 
 export const App = () => {
   return (
@@ -15,10 +20,16 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <Profile />
-      <Statistics />
-      <FriendList />
-      <TransactionHistory />
+      <Profile
+        username={profile.username}
+        tag={profile.tag}
+        location={profile.location}
+        avatar={profile.avatar}
+        stats={profile.stats}
+      />
+      <Statistics items={data} />
+      <FriendList friends={friends} />
+      {/* <TransactionHistory items={transactions} /> */}
     </div>
   );
 };

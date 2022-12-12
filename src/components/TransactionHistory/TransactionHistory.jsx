@@ -1,14 +1,13 @@
-import { TableHead } from '../TableHead/TableHead';
-import { TableBody } from '../TableBody/TableBody';
+import { TableHead } from './TableHead/TableHead';
+import { TableBody } from './TableBody/TableBody';
 import { Table } from './TransactionHistory.styled';
-import transactions from '../../data/transactions';
 import PropTypes from 'prop-types';
 
-export const TransactionHistory = () => {
+export const TransactionHistory = ({ id, type, amount, currency }) => {
   return (
     <Table>
       <TableHead />
-      <TableBody items={transactions} />
+      <TableBody key={id} type={type} amount={amount} currency={currency} />
     </Table>
   );
 };
