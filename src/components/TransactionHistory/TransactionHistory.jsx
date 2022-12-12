@@ -1,13 +1,18 @@
 import { TableHead } from './TableHead/TableHead';
 import { TableBody } from './TableBody/TableBody';
+import { TableRow } from './TableRow/TableRow';
 import { Table } from './TransactionHistory.styled';
 import PropTypes from 'prop-types';
 
-export const TransactionHistory = ({ id, type, amount, currency }) => {
+export const TransactionHistory = ({ items }) => {
   return (
     <Table>
       <TableHead />
-      <TableBody key={id} type={type} amount={amount} currency={currency} />
+      <TableBody>
+        {items.map(({ id, type, amount, currency }) => (
+          <TableRow key={id} type={type} amount={amount} currency={currency} />
+        ))}
+      </TableBody>
     </Table>
   );
 };

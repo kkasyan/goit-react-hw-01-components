@@ -6,7 +6,7 @@ export const Statistics = ({ id, label, percentage }) => {
   return (
     <section className={css.statistics}>
       <Title text="Upload stats"></Title>
-      <StatList key={id} />
+      <StatList key={id} label={label} percentage={percentage} />
     </section>
   );
 };
