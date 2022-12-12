@@ -12,9 +12,9 @@ export const StatList = ({ items }) => {
   );
 };
 
-// StatList.propTypes = {
-//   items: PropTypes.shape({
-//     label: PropTypes.string.isRequired,
-//     percentage: PropTypes.number.isRequired,
-//   }),
-// };
+StatList.propTypes = {
+  items: PropTypes.shape({
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+  }),
+};
