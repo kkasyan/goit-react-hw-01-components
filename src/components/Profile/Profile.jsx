@@ -1,6 +1,7 @@
+import css from './profile.module.css';
+
 import { Description } from './Description/Description';
 import { Stats } from './Stats/Stats';
-import css from './profile.module.css';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (

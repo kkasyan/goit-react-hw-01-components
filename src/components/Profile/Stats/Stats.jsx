@@ -1,6 +1,7 @@
-import { StatsItem } from '../StatsItem/StatsItem';
 import css from './stats.module.css';
 import PropTypes from 'prop-types';
+
+import { StatsItem } from '../StatsItem/StatsItem';
 
 export const Stats = ({ stats }) => {
   return (

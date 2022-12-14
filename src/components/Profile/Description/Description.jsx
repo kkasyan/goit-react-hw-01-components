@@ -1,10 +1,10 @@
+import css from './description.module.css';
+
 import {
   UserDetails,
   UserName,
   ProfileImage,
 } from '../UserDetails/UserDetails';
-
-import css from './description.module.css';
 
 export const Description = ({ avatar, username, tag, location }) => {
   return (
