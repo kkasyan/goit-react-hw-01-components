@@ -1,4 +1,4 @@
-import css from './profile.module.css';
+import css from './Profile.module.css';
 
 import { Description } from './Description/Description';
 import { Stats } from './Stats/Stats';

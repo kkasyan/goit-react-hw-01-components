@@ -1,4 +1,5 @@
-import css from './statsItem.module.css';
+import css from './StatsItem.module.css';
+import PropTypes from 'prop-types';
 
 export const StatsItem = ({ text, children }) => {
   return (
@@ -7,4 +8,9 @@ export const StatsItem = ({ text, children }) => {
       <span className={css.quantity}>{children}</span>
     </li>
   );
+};
+
+StatsItem.propTypes = {
+  text: PropTypes.string.isRequired,
+  children: PropTypes.number.isRequired,
 };

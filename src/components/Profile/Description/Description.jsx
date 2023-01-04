@@ -1,4 +1,4 @@
-import css from './description.module.css';
+import css from './Description.module.css';
 
 import {
   UserDetails,
