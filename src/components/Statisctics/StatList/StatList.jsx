@@ -1,4 +1,4 @@
-import css from './StatList.module.css';
+import css from './statList.module.css';
 import PropTypes from 'prop-types';
 
 export const StatList = ({ children }) => {

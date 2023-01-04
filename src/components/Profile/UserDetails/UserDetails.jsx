@@ -1,4 +1,4 @@
-import css from './UserDetails.module.css';
+import css from './userDetails.module.css';
 import PropTypes from 'prop-types';
 
 export const ProfileImage = ({ avatar }) => {

@@ -1,4 +1,4 @@
-import css from './StatsItem.module.css';
+import css from './statsItem.module.css';
 import PropTypes from 'prop-types';
 
 export const StatsItem = ({ text, children }) => {
